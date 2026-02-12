@@ -1,0 +1,64 @@
+{
+  "status": "success",
+  "dictref": "Glossary",
+  "terms": [
+    {
+      "term": "ascites",
+      "definition": "accumulation of excess fluid in the peritoneal cavity (abdomen)"
+    },
+    {
+      "term": "bronchiectasis",
+      "definition": "chronic dilation of the airways caused by the damaging effects of long-standing infection; symptoms include cough, sputum, wheezing, and shortness of breath"
+    },
+    {
+      "term": "chronic obstructive pulmonary disease (COPD)",
+      "definition": "any of a group of debilitating, progressive, and potentially fatal lung diseases that have in common increased resistance to air movement, prolongation of the expiratory phase of respiration, and loss of the normal elasticity of the lung; includes emphysema, chronic obstructive bronchitis, chronic bronchitis, and asthmatic bronchitis",
+      "aliases": "chronic obstructive pulmonary diseases, chronic obstructive pulmonary disease COPD, chronic obstructive pulmonary diseases COPD, COPD"
+    },
+    {
+      "term": "cirrhosis",
+      "definition": "chronic liver disease characterized by scarring and loss of liver function",
+      "aliases": "cirrhoses"
+    },
+    {
+      "term": "COPD Assessment Test (CAT)",
+      "definition": "a patient-completed instrument comprising 8 items that can quantify the impact of COPD on a patient's health",
+      "aliases": "COPD Assessment Tests, COPD Assessment Test CAT, COPD Assessment Tests CAT, CAT"
+    },
+    {
+      "term": "emphysema",
+      "definition": "chronic obstructive pulmonary disease marked by abnormal increase in the size of the alveoli, causing damage to their walls and making it harder to breathe",
+      "aliases": "emphysemas"
+    },
+    {
+      "term": "forced expiratory volume in 1 second (FEV<sub>1</sub>)",
+      "definition": "the amount of air that can be expelled from the lungs in 1 second",
+      "aliases": "forced expiratory volumes in 1 second, forced expiratory volume in 1 second FEV1, forced expiratory volumes in 1 second FEV1, FEV1"
+    },
+    {
+      "term": "hepatitis",
+      "definition": "inflammation of the liver",
+      "aliases": "hepatitides"
+    },
+    {
+      "term": "jaundice",
+      "definition": "yellowing of body tissues and fluids due to excessive levels of bilirubin in the bloodstream",
+      "aliases": "jaundices"
+    },
+    {
+      "term": "neutrophil elastase",
+      "definition": "an enzyme released by activated neutrophils during inflammatory or infectious processes",
+      "aliases": "neutrophil elastases"
+    },
+    {
+      "term": "panniculitis",
+      "definition": "inflammation of subcutaneous fatty tissue",
+      "aliases": "panniculitides"
+    },
+    {
+      "term": "St. George's Respiratory Questionnaire (SGRQ)",
+      "definition": "a 50-item, disease-specific instrument designed to measure impact on overall health, daily life, and perceived well-being in individuals with obstructive airways disease",
+      "aliases": "St Georges Respiratory Questionnaire, St George's Respiratory Questionnaires, St Georges Respiratory Questionnaires, St Georges Respiratory Questionnaire SGRQ, St Georges Respiratory Questionnaires SGRQ, SGRQ"
+    }
+  ]
+}

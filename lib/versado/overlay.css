@@ -1,0 +1,340 @@
+:root{
+    --v_button_color:#47466C;
+    --v_button_icon_color:white;
+    --v_button_icon_color_filter:invert(); /* use invert() for white | none for black*/
+
+    --v_button_panel_color:#47466C;
+    --v_button_panel_icon_color:white;
+    --v_button_panel_icon_color_filter:invert(); /* use invert() for white | none for black*/
+
+    --v_term_color: #DD7357;
+    --v_term_hover_color: orange;
+
+    --v_modal_color:#47466C;
+    --v_modal_text_color:white;
+   
+
+    --v_icon_filter:invert(); /* use invert() for white | none for black*/
+
+    --highlight_color: #ffffb2; /*rgba(255,255,0,0.3);*/
+    --highlight_text_color: #333333;
+    --selector_color:rgba(255,255,0,0.15);
+    --selector_btn_background_color:rgba(240,230,140,1)
+    
+
+}
+
+body { 
+    -webkit-touch-callout: none !important; 
+    touch-action: none !important;}
+a { 
+    -webkit-user-select: none !important; 
+    user-select: none !important;}
+
+/* button panel*/
+
+.v_action_button{
+    background:var(--v_button_color);
+    color:var(--v_button_icon_color_filter);
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    padding: 10px;
+    border-radius: 24px;    cursor: pointer;
+    rotate: 0deg;
+    cursor: pointer;
+}
+.v_action_button img{
+    filter:var(--v_button_icon_color_filter);
+
+}
+
+.v_action_panel{
+    background:var(--v_button_panel_color);
+    color:var(--v_button_panel_icon_color);
+    width:48px;
+    height:150px;
+    position:fixed;
+    right: -50px;
+    bottom:75px;
+    z-index:999;
+    padding:10px 6px;
+    border-radius:24px;
+}
+.v_action_panel img{
+    filter:var(--v_button_panel_icon_color_filter);
+    
+}
+
+.v_panel_btn{
+    background:none;
+    margin-top:5px;
+    padding-top:6px;
+    padding-left:6px;
+    padding-right:6px;
+    border-radius:12px;
+}
+
+.v_panel_btn_on{
+    background:var(--selector_btn_background_color);
+}
+.v_panel_btn_on img{
+    filter:none;
+    
+}
+
+.v_term{
+    font-weight: bold;
+    /*color:var(--v_term_color);*/
+    border-bottom: 1px dotted black;
+    line-height:1.2em
+    
+    
+}
+.v_term:hover{
+    color:var(--v_term_hover_color);
+}
+
+.v_definition_box{
+    width:320px;          /* was 200px */
+    max-width:70vw;       /* keeps it responsive on small screens */
+    background:var(--v_modal_color);
+    padding:10px;
+    box-shadow: 0px 2px 12px rgba(0,0,0,.4);
+    border-radius: 10px;
+}
+.v_definition_box_content_close{
+    display:block;
+    text-align:right;
+    height:26px;
+    filter:var(--v_icon_filter)
+}
+
+.v_definition_box_content{
+    background:var(--v_modal_color);
+    color:var(--v_modal_text_color);
+}
+
+.v_definition_box_definition img{
+    width:100%;
+}
+
+.v_definition_box_content h3{
+    font-weight: 600;
+}
+.v_definition_box_carat{
+    width:20px;
+    height:20px;
+    transform: rotate(45deg);
+    background:var(--v_modal_color);
+    margin-bottom:-16px;
+    margin-left:10px;
+}
+
+.v_modal_holder{
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    position:absolute;
+    background-color: rgba(0,0,0,0.4);
+    z-index:10000
+}
+.v_modal_mobile_box{
+    width:80vw;
+    height:80vh;
+    
+    background: var(--v_modal_color);
+    padding:30px;
+    box-shadow: 0px 2px 12px rgba(0,0,0,.4);
+    border-radius: 10px;
+    margin:auto;
+    margin-top:-6vh;
+    overflow:scroll;
+    z-index:11000;
+    
+}
+.small-link{
+    font-size: 12px;
+    vertical-align: middle;
+    margin:6px;
+    cursor: pointer;
+}
+.small-link img{
+    width:16px;
+    filter:var(--v_icon_filter);
+    margin-right:6px;
+    vertical-align: middle;
+}
+
+.small_modal{
+    height:40vh
+}
+
+.v_modal_holder h1{
+    color:var(--v_modal_text_color);
+    font-size:22px;
+    font-weight:800;
+    margin-bottom:40px;
+    z-index:12000;
+}
+.v_print_link{
+    color:var(--v_modal_text_color);
+    margin-bottom:20px
+}
+.v_print_link:hover{
+    cursor:pointer;
+}
+.v_print_link img{
+    filter:var(--v_icon_filter);
+    margin-right:6px;
+}
+
+.v_dict_row{
+    padding:20px;
+    background:rgba(255,255,255,0.15);
+    color:var(--v_modal_text_color);
+    border-bottom:rgba(255,255,255,0.2) solid 1px;
+    margin-bottom:10px;
+    border-radius:8px;
+}
+
+.v_dict_term{
+    font-weight:600;
+    font-size:18px;
+    
+}
+
+.v_dict_definition{
+    font-weight:200;
+}
+
+.v_dict_definition img{
+    width:100%
+}
+.v_modal_close{
+    filter:var(--v_icon_filter);
+    display:block;
+    width:78vw;
+    text-align:right;
+    border:green solid 0px;
+    height:24;
+    margin-left:auto;
+    margin-right:auto;  
+    z-index:13000;
+    margin-top:8vh;
+    margin-bottom:-30px;
+    padding-right:10px;
+    padding-top:10px;
+    cursor: pointer;
+}
+
+.v_selectable_bookmarks{
+    overflow: scroll;
+    margin-top:20px;
+}
+.v_selectable_bookmarks h2{
+    color:var(--v_modal_text_color);
+    font-size:16px;
+}
+
+.v_bookmarkable_chunk{
+    padding:20px;
+    background:rgba(255,255,255,0.15);
+    color:var(--v_modal_text_color);
+    border-bottom:rgba(255,255,255,0.2) solid 1px;
+    margin-bottom:10px;
+    border-radius:8px;
+    cursor: pointer;
+}
+.bm_highlight{
+    background-color:var(--highlight_color);
+    color:var(--highlight_text_color)
+}
+.bm_selectable{
+    border: dashed darkgray 1px;
+}
+.bm_selectable:hover{
+    border: dashed darkgray 1px;
+    /*background-color:var(--selector_color);*/
+}
+.bm_selectable{
+    border: dashed darkgray 1px;
+}
+
+.v_bookmarkselector{
+    display:block;
+    width:100%;
+    text-align: center;
+    
+}
+.v_bookmarkselector img{
+    filter:var(--v_icon_filter)
+}
+
+.v_bookmarktext{
+    display:block;
+    width:100%;
+    
+ }
+ .v_hide{
+    display:none
+ }
+ .v_notesentry{
+    width:100%;
+    height:10vh;
+    margin:6px;
+    padding:6px;
+    border-radius:6px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+ }
+ .v_referencebookmark{
+    color:lightgray;
+    font-style: italic;
+    margin-bottom:10px;
+ }
+ .v_referencenote{
+    font-family:monospace;
+    font-size:16px;
+    margin: 20px 0px
+ }
+ .v_modal_buttons{
+    text-align:right;
+    color:var(--v_modal_text_color)
+ }
+
+.v_modal_button_inline{
+    color:var(--v_modal_text_color);
+    display:inline-block;
+    margin-right:20px;
+}
+
+.v_modal_button_inline:hover{
+    cursor:pointer;
+}
+
+.v_modal_button_inline img{
+    filter:var(--v_icon_filter);
+    margin-right:6px;
+}
+
+/* NEW: Floating Notes Button */
+.v_notes_button {
+    background: var(--v_button_color);
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    right: 25px;
+    bottom: 80px; /* positioned just above the glossary button */
+    z-index: 999;
+    padding: 10px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.v_notes_button img {
+    filter: var(--v_button_icon_color_filter);
+}
